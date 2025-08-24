@@ -1,5 +1,7 @@
 :root {
     --black: #333333;
+    --gray: #777777;
+    --light-gray: #aaaaaa;
     --white: #f0f0f0;
 }
 
@@ -12,7 +14,104 @@ a {
     color: var(--black);
 }
 
+#h-line {
+    width: 100%;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    border-top: 5px solid var(--black);
+}
+
+#h-dot-line {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    border-top: 4px dotted var(--black);
+}
+
 body {
-    background-color: var(--white);
+    margin: 0;
+    padding: 10px;
     color: var(--black);
+    background-color: var(--white);
+}
+
+.logo,
+.contact {
+    display: block;
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.logo h2,
+.contact a {
+    color: var(--white);
+    background: var(--black);
+}
+
+nav {
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 5px;
+}
+
+nav .menu,
+.contact a {
+    padding: 10px;
+    display: inline;
+}
+
+nav .menu a:hover,
+.contact a:hover {
+    text-decoration: underline;
+}
+
+main {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+main>.container {
+    /* background-color: violet; */
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px;
+}
+
+#news .card,
+#activity .card {
+    /* background-color: aqua; */
+    padding: 10px;
+    margin: 0 auto;
+    width: 70%;
+    max-width: 50%;
+}
+
+#news img {
+    width: 100%;
+    height: 360px;
+    padding: 5px;
+    margin: 0 auto;
+    display: block;
+    object-fit: cover;
+    background: white;
+    max-width: calc(100% - 20px);
+    border: 1px solid var(--gray);
+}
+
+#activity img {
+width: 100%;
+    height: 240px;
+    padding: 5px;
+    margin: 0 auto;
+    display: block;
+    object-fit: cover;
+    background: white;
+    max-width: calc(100% - 20px);
+    border: 1px solid var(--gray);
 }
