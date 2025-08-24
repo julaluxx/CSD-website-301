@@ -70,29 +70,36 @@ nav .menu a:hover,
 }
 
 main {
-    gap: 10px;
     display: flex;
     flex-direction: column;
 }
 
-main>.container {
+#headline {
     /* background-color: violet; */
-    display: flex;
-    flex-direction: row;
     gap: 10px;
     padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
-#news .card,
-#activity .card {
+#news {
+    /* background-color: violet; */
+    gap: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#headline .card,
+#news .card {
     /* background-color: aqua; */
     padding: 10px;
     margin: 0 auto;
-    width: 70%;
-    max-width: 50%;
+    width: 100%;
+    max-width: 100%;
 }
 
-#news img {
+#headline img {
     width: 100%;
     height: 360px;
     padding: 5px;
@@ -104,8 +111,8 @@ main>.container {
     border: 1px solid var(--gray);
 }
 
-#activity img {
-width: 100%;
+#news img {
+    width: 100%;
     height: 240px;
     padding: 5px;
     margin: 0 auto;
@@ -114,4 +121,8 @@ width: 100%;
     background: white;
     max-width: calc(100% - 20px);
     border: 1px solid var(--gray);
+}
+
+footer p{
+    width: calc(100% - 2px);
 }
