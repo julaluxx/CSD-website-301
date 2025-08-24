@@ -1,0 +1,18 @@
+:root {
+    --black: #333333;
+    --white: #f0f0f0;
+}
+
+* {
+    font-family: 'Taviraj';
+    text-decoration: none;
+}
+
+a {
+    color: var(--black);
+}
+
+body {
+    background-color: var(--white);
+    color: var(--black);
+}
