@@ -30,6 +30,12 @@ a {
     border-top: 4px dotted var(--black);
 }
 
+img {
+    filter: grayscale();
+}
+
+/* ------------ */
+
 body {
     margin: 0;
     padding: 10px;
